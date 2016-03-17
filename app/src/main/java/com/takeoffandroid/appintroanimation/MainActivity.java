@@ -1,6 +1,5 @@
 package com.takeoffandroid.appintroanimation;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -13,7 +12,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
@@ -117,7 +115,9 @@ public class MainActivity extends AppCompatActivity{
 
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView((RelativeLayout) object);
+//            container.removeView((RelativeLayout) object);
+            Intent intent = new Intent(MainActivity.this, MainPage.class);
+            startActivity(intent);
 
         }
     }
