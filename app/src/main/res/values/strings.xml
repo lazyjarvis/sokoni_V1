@@ -16,4 +16,6 @@
     <string name="social_network_hint">Stay connected with your friends, colleagues and family globally</string>
     <string name="skip">SKIP</string>
 
+    <string name="hello_blank_fragment">content goes here</string>
+
 </resources>
